@@ -12,8 +12,8 @@
     "book_now": "RESERVAR AHORA"
   },
   "About": {
-    "title": "Palapita Maya es tu elección para unas vacaciones perfectas en los brazos de la naturaleza",
-    "p1": "Palapita Maya, idealmente ubicada a solo 10 minutos de la Ruta de los Cenotes, se ha convertido en un verdadero símbolo de conexión natural y confort en medio de la selva.",
+    "title": "Casita Ixchel es tu elección para unas vacaciones perfectas en los brazos de la naturaleza",
+    "p1": "Casita Ixchel, idealmente ubicada a solo 10 minutos de la Ruta de los Cenotes, se ha convertido en un verdadero símbolo de conexión natural y confort en medio de la selva.",
     "p2": "Nuestros espacios únicos con ventanas panorámicas ofrecen vistas impresionantes de la flora tropical, creando una atmósfera inigualable de tranquilidad y paz."
   },
   "Amenities": {
@@ -70,7 +70,7 @@
   },
   "GalleryMap": {
     "gallery_label": "GALERÍA",
-    "gallery_title": "Descubre Palapita Maya",
+    "gallery_title": "Descubre Casita Ixchel",
     "location_label": "UBICACIÓN",
     "location_title": "Km 10, Ruta de los Cenotes"
   },
@@ -112,7 +112,7 @@
     "i1": "Política de Privacidad",
     "i2": "Términos de Uso",
     "i3": "Contactos",
-    "rights": "Palapita Maya © 2026. Todos los derechos reservados."
+    "rights": "Casita Ixchel © 2026. Todos los derechos reservados."
   },
   "ContactForm": {
     "label": "CONTACTO",

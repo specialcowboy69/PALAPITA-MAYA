@@ -8,7 +8,7 @@ export default function Hero({ dict }: { dict: any }) {
       <div className={styles.imageWrapper}>
         <Image 
           src="/cabin-exterior.jpg"
-          alt="Palapita Maya"
+          alt="Casita Ixchel"
           fill
           priority
           unoptimized

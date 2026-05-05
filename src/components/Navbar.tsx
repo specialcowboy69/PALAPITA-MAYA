@@ -6,7 +6,7 @@ export default function Navbar({ dict, lang }: { dict: any, lang: string }) {
     <nav className={styles.navbar}>
       <div className={`container ${styles.navContainer}`}>
         <div className={styles.logo}>
-          <Link href={`/${lang}`}>PALAPITA MAYA</Link>
+          <Link href={`/${lang}`}>CASITA IXCHEL</Link>
         </div>
         <div className={styles.links}>
           <Link href={`/${lang}#about`}>{dict.about}</Link>

@@ -155,8 +155,15 @@ export default async function Home({ params }: { params: Promise<{ lang: Locale 
         </div>
       </section>
 
-      {/* Contact Form Section */}
-      <ContactForm dict={dict} />
+      {/* Booking Form Section */}
+      <section id="book" style={{ padding: '6.4rem 0', minHeight: '60vh' }}>
+        <div className="container" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+          <p style={{ fontSize: '0.75rem', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '1rem' }}>{dict.Booking.label}</p>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 400, marginBottom: '3rem' }}>{dict.Booking.title}</h2>
+          
+          <BookingForm dict={dict.BookingForm} />
+        </div>
+      </section>
 
       {/* Rooms Section */}
       <section id="rooms" style={{ padding: '6.4rem 0', backgroundColor: 'var(--bg-secondary)', minHeight: '50vh' }}>
@@ -210,15 +217,8 @@ export default async function Home({ params }: { params: Promise<{ lang: Locale 
         </div>
       </section>
 
-      {/* Booking Form Section */}
-      <section id="book" style={{ padding: '6.4rem 0', minHeight: '60vh' }}>
-        <div className="container" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-          <p style={{ fontSize: '0.75rem', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '1rem' }}>{dict.Booking.label}</p>
-          <h2 style={{ fontSize: '2.5rem', fontWeight: 400, marginBottom: '3rem' }}>{dict.Booking.title}</h2>
-          
-          <BookingForm dict={dict.BookingForm} />
-        </div>
-      </section>
+      {/* Contact Form Section */}
+      <ContactForm dict={dict} />
 
       {/* Footer Section */}
       <footer style={{ backgroundColor: '#000', color: '#fff', padding: '4rem 0', textAlign: 'center' }}>

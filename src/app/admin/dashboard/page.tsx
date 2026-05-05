@@ -87,7 +87,7 @@ export default function AdminDashboard() {
             <input 
               type="date" 
               value={startDateBlock}
-              onChange={(e) => setStartDateBlock(e.target.value)}
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => setStartDateBlock(e.target.value)}
               style={{ padding: '0.5rem' }}
             />
           </div>
@@ -96,7 +96,7 @@ export default function AdminDashboard() {
             <input 
               type="date" 
               value={endDateBlock}
-              onChange={(e) => setEndDateBlock(e.target.value)}
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEndDateBlock(e.target.value)}
               min={startDateBlock}
               style={{ padding: '0.5rem' }}
             />
@@ -107,7 +107,7 @@ export default function AdminDashboard() {
         <div style={{ marginTop: '1rem' }}>
           <h3>Fechas Bloqueadas</h3>
           <ul>
-            {blockedDates.map(b => (
+            {blockedDates.map((b: any) => (
               <li key={b.id} style={{ marginBottom: '0.5rem' }}>
                 {new Date(b.date).toLocaleDateString()} 
                 <button onClick={() => unblockDate(b.date)} style={{ marginLeft: '1rem', color: 'red', cursor: 'pointer', background: 'none', border: 'none' }}>Desbloquear</button>
@@ -131,7 +131,7 @@ export default function AdminDashboard() {
             </tr>
           </thead>
           <tbody>
-            {reservations.map(r => (
+            {reservations.map((r: any) => (
               <tr key={r.id} style={{ borderBottom: '1px solid #e2e8f0' }}>
                 <td style={{ padding: '0.5rem' }}>{r.customerName}</td>
                 <td style={{ padding: '0.5rem' }}>{r.email}</td>
@@ -155,7 +155,7 @@ export default function AdminDashboard() {
             <p>No hay consultas nuevas.</p>
           ) : (
             <div style={{ display: 'grid', gap: '1rem' }}>
-              {inquiries.map(inq => (
+              {inquiries.map((inq: any) => (
                 <div key={inq.id} style={{ 
                   backgroundColor: '#fff', 
                   padding: '1rem', 

@@ -67,7 +67,7 @@ export default function ContactForm({ dict }: ContactFormProps) {
               type="text"
               required
               value={formData.name}
-              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, name: e.target.value })}
               placeholder={dict.ContactForm.name_placeholder}
               style={{
                 width: '100%',
@@ -89,7 +89,7 @@ export default function ContactForm({ dict }: ContactFormProps) {
               type="email"
               required
               value={formData.email}
-              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, email: e.target.value })}
               placeholder={dict.ContactForm.email_placeholder}
               style={{
                 width: '100%',
@@ -111,7 +111,7 @@ export default function ContactForm({ dict }: ContactFormProps) {
               required
               rows={4}
               value={formData.message}
-              onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+              onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setFormData({ ...formData, message: e.target.value })}
               placeholder={dict.ContactForm.message_placeholder}
               style={{
                 width: '100%',

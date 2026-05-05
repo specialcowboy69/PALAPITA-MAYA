@@ -24,8 +24,8 @@ export default function BookingForm({ dict }: { dict: any }) {
   useEffect(() => {
     fetch('/api/availability')
       .then(res => res.json())
-      .then(data => setUnavailableDates(data.unavailableDates || []))
-      .catch(err => console.error(err));
+      .then((data: any) => setUnavailableDates(data.unavailableDates || []))
+      .catch((err: any) => console.error(err));
   }, []);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ export default function BookingForm({ dict }: { dict: any }) {
       const diff = differenceInDays(endDate, startDate);
       if (diff > 0) {
         // Verificar solapamiento
-        const isOverlap = unavailableDates.some(date => {
+        const isOverlap = unavailableDates.some((date: string) => {
           const d = new Date(date);
           return d >= startDate && d < endDate;
         });
@@ -51,7 +51,7 @@ export default function BookingForm({ dict }: { dict: any }) {
     }
   }, [startDate, endDate, unavailableDates, dict]);
 
-  const excludedDates = unavailableDates.map(date => new Date(new Date(date).getTime() + new Date(date).getTimezoneOffset() * 60000));
+  const excludedDates = unavailableDates.map((date: string) => new Date(new Date(date).getTime() + new Date(date).getTimezoneOffset() * 60000));
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
@@ -71,7 +71,7 @@ export default function BookingForm({ dict }: { dict: any }) {
             <label htmlFor="startDate" style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>{dict.arrival}</label>
             <DatePicker 
               selected={startDate} 
-              onChange={(date) => setStartDate(date)} 
+              onChange={(date: Date | null) => setStartDate(date)} 
               selectsStart 
               startDate={startDate} 
               endDate={endDate} 
@@ -85,7 +85,7 @@ export default function BookingForm({ dict }: { dict: any }) {
             <label htmlFor="endDate" style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>{dict.departure}</label>
             <DatePicker 
               selected={endDate} 
-              onChange={(date) => setEndDate(date)} 
+              onChange={(date: Date | null) => setEndDate(date)} 
               selectsEnd 
               startDate={startDate} 
               endDate={endDate} 
@@ -180,7 +180,7 @@ export default function BookingForm({ dict }: { dict: any }) {
                   alert(dict.error_capture);
                 }
               }}
-              onError={(err) => {
+              onError={(err: any) => {
                 console.error("PayPal Error:", err);
                 alert(dict.error_paypal);
               }}

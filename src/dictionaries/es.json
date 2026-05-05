@@ -1,0 +1,131 @@
+{
+  "Navbar": {
+    "about": "SOBRE NOSOTROS",
+    "location": "UBICACIÓN",
+    "contact": "CONTÁCTANOS",
+    "book": "RESERVAR"
+  },
+  "Hero": {
+    "subtitle": "RETIRO EN LA NATURALEZA",
+    "title1": "Un santuario en la selva",
+    "title2": "creado para tu descanso",
+    "book_now": "RESERVAR AHORA"
+  },
+  "About": {
+    "title": "Palapita Maya es tu elección para unas vacaciones perfectas en los brazos de la naturaleza",
+    "p1": "Palapita Maya, idealmente ubicada a solo 10 minutos de la Ruta de los Cenotes, se ha convertido en un verdadero símbolo de conexión natural y confort en medio de la selva.",
+    "p2": "Nuestros espacios únicos con ventanas panorámicas ofrecen vistas impresionantes de la flora tropical, creando una atmósfera inigualable de tranquilidad y paz."
+  },
+  "Amenities": {
+    "label": "AMENIDADES",
+    "title": "Todo lo que necesitas en la selva",
+    "space": "100m²",
+    "space_desc": "De espacio privado",
+    "kitchen": "Cocina",
+    "kitchen_desc": "Totalmente equipada",
+    "shower": "Ducha",
+    "shower_desc": "Con vista exterior",
+    "nature": "Naturaleza",
+    "nature_desc": "Inmersión total",
+    "rest": "Descanso",
+    "rest_desc": "2 camas de matrimonio"
+  },
+  "Experiences": {
+    "label": "EXPERIENCIAS A TU MEDIDA",
+    "title": "¿Qué tipo de viajero eres?",
+    "divers": "Buzos y Exploradores",
+    "divers_desc": "\"A un paso de los mejores cenotes de Quintana Roo.\"",
+    "couples": "Viaje de pareja",
+    "couples_desc": "\"Privacidad total para un escape romántico bajo las estrellas.\"",
+    "nature": "Amantes de la naturaleza",
+    "nature_desc": "\"Avistamiento de aves exóticas desde tu propia terraza.\"",
+    "solitary": "Almas Solitarias / Nómadas",
+    "solitary_desc": "\"El silencio que necesitas para crear, leer o simplemente SER.\""
+  },
+  "Pricing": {
+    "label": "NUESTROS PRECIOS",
+    "title": "Tarifas y Estancias Largas",
+    "standard": "Estancia Estándar",
+    "night": "/ noche",
+    "min_stay": "(Mínimo 2 noches)",
+    "book_now": "Reservar ahora",
+    "long_term": "Largo Plazo",
+    "special": "ESPECIAL",
+    "long_term_q": "¿Buscas un retiro de 1 a 6 meses?",
+    "long_term_desc": "Precio especial para estancias largas.",
+    "request": "Solicitar tarifa especial para 1 o 6 meses"
+  },
+  "Rooms": {
+    "label": "CASA ACOGEDORA",
+    "title": "Nuestras acogedoras estancias están siempre listas para ti",
+    "desc": "Diseño rústico moderno, espacios amplios y la mayor privacidad. Todo esto hace de tus vacaciones una experiencia inolvidable.",
+    "checklist": [
+      "2 camas matrimoniales",
+      "Cocina equipada",
+      "Baño interior completo",
+      "Ducha exterior con calentador solar",
+      "Luz eléctrica, Agua caliente",
+      "Lavadora"
+    ]
+  },
+  "GalleryMap": {
+    "gallery_label": "GALERÍA",
+    "gallery_title": "Descubre Palapita Maya",
+    "location_label": "UBICACIÓN",
+    "location_title": "Km 10, Ruta de los Cenotes"
+  },
+  "Booking": {
+    "label": "RESERVA TU ESTANCIA",
+    "title": "Escapa a la selva hoy"
+  },
+  "BookingForm": {
+    "arrival": "Llegada",
+    "departure": "Salida",
+    "select_date": "Selecciona fecha",
+    "fullname": "Nombre Completo",
+    "fullname_placeholder": "Tu nombre",
+    "email": "Correo Electrónico",
+    "email_placeholder": "tu@email.com",
+    "whatsapp": "WhatsApp (Opcional)",
+    "whatsapp_placeholder": "+52 ...",
+    "summary": "Resumen de Reserva",
+    "night": "noche",
+    "nights": "noches",
+    "total": "Total",
+    "pay_button": "Completa los datos para pagar",
+    "error_overlap": "Algunas fechas seleccionadas no están disponibles.",
+    "error_order": "La fecha de salida debe ser posterior a la de entrada.",
+    "success": "¡Pago completado con éxito! Tu reserva está confirmada.",
+    "error_capture": "Hubo un problema confirmando tu pago.",
+    "error_paypal": "Ocurrió un error con PayPal."
+  },
+  "Footer": {
+    "subtitle": "Resort & Nature Retreat",
+    "services": "Servicios",
+    "s1": "Servicio de habitaciones",
+    "s2": "Complejo en la selva",
+    "s3": "Traslados",
+    "guests": "Huéspedes",
+    "g1": "Traslado al hotel",
+    "g2": "Recordatorio de huésped",
+    "info": "Información",
+    "i1": "Política de Privacidad",
+    "i2": "Términos de Uso",
+    "i3": "Contactos",
+    "rights": "Palapita Maya © 2026. Todos los derechos reservados."
+  },
+  "ContactForm": {
+    "label": "CONTACTO",
+    "title": "¿Tienes alguna duda?",
+    "name": "Nombre",
+    "name_placeholder": "Tu nombre",
+    "email": "Email",
+    "email_placeholder": "tu@email.com",
+    "message": "Mensaje",
+    "message_placeholder": "¿Cómo podemos ayudarte?",
+    "send": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado! Te contactaremos pronto.",
+    "error": "Hubo un error al enviar el mensaje. Inténtalo de nuevo."
+  }
+}

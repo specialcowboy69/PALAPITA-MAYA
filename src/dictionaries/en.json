@@ -1,0 +1,131 @@
+{
+  "Navbar": {
+    "about": "ABOUT US",
+    "location": "LOCATION",
+    "contact": "CONTACTS",
+    "book": "BOOK NOW"
+  },
+  "Hero": {
+    "subtitle": "NATURE RETREAT",
+    "title1": "A jungle sanctuary",
+    "title2": "crafted for your rest",
+    "book_now": "BOOK NOW"
+  },
+  "About": {
+    "title": "Palapita Maya is your choice for a perfect vacation in the arms of nature",
+    "p1": "Palapita Maya, ideally located just 10 minutes from the Cenote Route, has become a true symbol of natural connection and comfort in the middle of the jungle.",
+    "p2": "Our unique spaces with panoramic windows offer breathtaking views of the tropical flora, creating an unparalleled atmosphere of tranquility and peace."
+  },
+  "Amenities": {
+    "label": "AMENITIES",
+    "title": "Everything you need in the jungle",
+    "space": "100sqm",
+    "space_desc": "Of private space",
+    "kitchen": "Kitchen",
+    "kitchen_desc": "Fully equipped",
+    "shower": "Shower",
+    "shower_desc": "With outdoor view",
+    "nature": "Nature",
+    "nature_desc": "Full immersion",
+    "rest": "Rest",
+    "rest_desc": "2 double beds"
+  },
+  "Experiences": {
+    "label": "TAILORED EXPERIENCES",
+    "title": "What kind of traveler are you?",
+    "divers": "Divers and Explorers",
+    "divers_desc": "\"A step away from the best cenotes in Quintana Roo.\"",
+    "couples": "Couples Trip",
+    "couples_desc": "\"Total privacy for a romantic escape under the stars.\"",
+    "nature": "Nature Lovers",
+    "nature_desc": "\"Exotic bird watching from your own terrace.\"",
+    "solitary": "Solitary Souls / Nomads",
+    "solitary_desc": "\"The silence you need to create, read, or just BE.\""
+  },
+  "Pricing": {
+    "label": "OUR PRICES",
+    "title": "Rates and Long Stays",
+    "standard": "Standard Stay",
+    "night": "/ night",
+    "min_stay": "(Minimum 2 nights)",
+    "book_now": "Book now",
+    "long_term": "Long Term",
+    "special": "SPECIAL",
+    "long_term_q": "Looking for a 1 to 6 months retreat?",
+    "long_term_desc": "Special price for long stays.",
+    "request": "Request special rate for 1 or 6 months"
+  },
+  "Rooms": {
+    "label": "COZY HOME",
+    "title": "Our cozy rooms are always ready for you",
+    "desc": "Modern rustic design, spacious areas, and utmost privacy. All this makes your vacation an unforgettable experience.",
+    "checklist": [
+      "2 double beds",
+      "Equipped kitchen",
+      "Full interior bathroom",
+      "Outdoor shower with solar heater",
+      "Electric light, Hot water",
+      "Washing machine"
+    ]
+  },
+  "GalleryMap": {
+    "gallery_label": "GALLERY",
+    "gallery_title": "Discover Palapita Maya",
+    "location_label": "LOCATION",
+    "location_title": "Km 10, Cenote Route"
+  },
+  "Booking": {
+    "label": "BOOK YOUR STAY",
+    "title": "Escape to the jungle today"
+  },
+  "BookingForm": {
+    "arrival": "Arrival",
+    "departure": "Departure",
+    "select_date": "Select date",
+    "fullname": "Full Name",
+    "fullname_placeholder": "Your name",
+    "email": "Email Address",
+    "email_placeholder": "you@email.com",
+    "whatsapp": "WhatsApp (Optional)",
+    "whatsapp_placeholder": "+52 ...",
+    "summary": "Booking Summary",
+    "night": "night",
+    "nights": "nights",
+    "total": "Total",
+    "pay_button": "Complete data to pay",
+    "error_overlap": "Some selected dates are not available.",
+    "error_order": "The departure date must be after the arrival date.",
+    "success": "Payment successfully completed! Your booking is confirmed.",
+    "error_capture": "There was a problem confirming your payment.",
+    "error_paypal": "An error occurred with PayPal."
+  },
+  "Footer": {
+    "subtitle": "Resort & Nature Retreat",
+    "services": "Services",
+    "s1": "Room services",
+    "s2": "Jungle complex",
+    "s3": "Transfer",
+    "guests": "Guests",
+    "g1": "Transfer to the hotel",
+    "g2": "Guest Reminder",
+    "info": "Information",
+    "i1": "Privacy Policy",
+    "i2": "Terms of Use",
+    "i3": "Contacts",
+    "rights": "Palapita Maya © 2026. All rights reserved."
+  },
+  "ContactForm": {
+    "label": "CONTACT",
+    "title": "Have any questions?",
+    "name": "Name",
+    "name_placeholder": "Your name",
+    "email": "Email",
+    "email_placeholder": "your@email.com",
+    "message": "Message",
+    "message_placeholder": "How can we help you?",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent! We'll contact you soon.",
+    "error": "There was an error sending your message. Please try again."
+  }
+}

@@ -1,6 +1,9 @@
 export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
+
 import { NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
+import { eachDayOfInterval } from 'date-fns';
 
 export async function GET() {
   try {
@@ -10,8 +13,6 @@ export async function GET() {
     return NextResponse.json({ error: 'Error interno' }, { status: 500 });
   }
 }
-
-import { eachDayOfInterval } from 'date-fns';
 
 export async function POST(request: Request) {
   try {

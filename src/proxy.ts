@@ -5,7 +5,7 @@ import { decrypt } from '@/lib/auth';
 const locales = ['es', 'en'];
 const defaultLocale = 'es';
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const path = request.nextUrl.pathname;
   
   // Protect /admin routes (except /admin/login)

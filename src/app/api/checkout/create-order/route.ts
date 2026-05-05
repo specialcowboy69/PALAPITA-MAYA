@@ -3,6 +3,9 @@ import prisma from '@/lib/prisma';
 import { createOrder } from '@/lib/paypal';
 import { differenceInDays } from 'date-fns';
 
+export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
+
 const PRICE_PER_NIGHT = 150; // Ejemplo de precio por noche
 
 export async function POST(request: Request) {

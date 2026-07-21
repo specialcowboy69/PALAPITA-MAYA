@@ -10,6 +10,7 @@ export async function GET() {
     const blockedDates = await prisma.blockedDate.findMany();
     return NextResponse.json({ blockedDates });
   } catch (error) {
+    console.error('Admin blocked dates GET error:', error);
     return NextResponse.json({ error: 'Error interno' }, { status: 500 });
   }
 }
@@ -52,7 +53,7 @@ export async function POST(request: Request) {
     
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error(error);
+    console.error('Admin blocked dates POST error:', error);
     return NextResponse.json({ error: 'Error al bloquear rango de fechas' }, { status: 500 });
   }
 }
@@ -68,6 +69,7 @@ export async function DELETE(request: Request) {
     });
     return NextResponse.json({ success: true });
   } catch (error) {
+    console.error('Admin blocked dates DELETE error:', error);
     return NextResponse.json({ error: 'Error al desbloquear' }, { status: 500 });
   }
 }

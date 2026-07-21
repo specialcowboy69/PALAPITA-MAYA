@@ -1,4 +1,6 @@
 export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
+
 import { NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
 import { eachDayOfInterval } from 'date-fns';
@@ -7,7 +9,7 @@ export async function GET() {
   try {
     // 1. Obtener todas las fechas bloqueadas manualmente
     const blockedDatesDb = await prisma.blockedDate.findMany();
-    const manualBlocked = blockedDatesDb.map((b: any) => b.date.toISOString().split('T')[0]);
+    const manualBlocked = blockedDatesDb.map((b) => b.date.toISOString().split('T')[0]);
 
     // 2. Obtener las reservas activas (PAGADAS o PENDIENTES)
     const reservations = await prisma.reservation.findMany({
@@ -20,7 +22,7 @@ export async function GET() {
 
     // Extraer todos los días individuales ocupados por las reservas
     let reservedDates: string[] = [];
-    reservations.forEach((res: any) => {
+    reservations.forEach((res) => {
       // eachDayOfInterval incluye ambos extremos (start y end)
       const days = eachDayOfInterval({ start: res.startDate, end: res.endDate });
       const formattedDays = days.map((d: Date) => d.toISOString().split('T')[0]);
@@ -32,6 +34,7 @@ export async function GET() {
 
     return NextResponse.json({ unavailableDates });
   } catch (error) {
+    console.error('Availability API error:', error);
     return NextResponse.json({ error: 'Error al consultar disponibilidad' }, { status: 500 });
   }
 }

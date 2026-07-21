@@ -1,4 +1,6 @@
 export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
+
 import { NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
 import { getSession } from '@/lib/auth';
@@ -15,6 +17,7 @@ export async function GET() {
     });
     return NextResponse.json(inquiries);
   } catch (error) {
+    console.error('Admin inquiries GET error:', error);
     return NextResponse.json({ error: 'Error fetching inquiries' }, { status: 500 });
   }
 }
@@ -33,6 +36,7 @@ export async function PATCH(request: Request) {
     });
     return NextResponse.json(updated);
   } catch (error) {
+    console.error('Admin inquiries PATCH error:', error);
     return NextResponse.json({ error: 'Error updating inquiry' }, { status: 500 });
   }
 }
@@ -56,6 +60,7 @@ export async function DELETE(request: Request) {
     });
     return NextResponse.json({ success: true });
   } catch (error) {
+    console.error('Admin inquiries DELETE error:', error);
     return NextResponse.json({ error: 'Error deleting inquiry' }, { status: 500 });
   }
 }

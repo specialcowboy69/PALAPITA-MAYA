@@ -28,6 +28,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Contraseña incorrecta' }, { status: 401 });
     }
   } catch (error) {
+    console.error('Admin login API error:', error);
     return NextResponse.json({ error: 'Error interno' }, { status: 500 });
   }
 }
